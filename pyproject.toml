@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "langgraph-crag-demo"
+version = "0.1.0"
+description = ""
+authors = ["Nagi-ovo <13264500190@163.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "0.1.13"
+langchain-core = "0.1.33"
+langgraph = "0.0.30"
+python-dotenv = "1.0.1"
+langchain-openai = "0.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
