@@ -5,3 +5,4 @@ langchain_google_genai==0.0.11
 langchain_openai==0.1.1
 langgraph==0.0.30
 python-dotenv==1.0.1
+beutifulsoup4==4.9.3
