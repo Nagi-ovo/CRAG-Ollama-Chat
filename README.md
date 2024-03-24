@@ -5,6 +5,8 @@
 width="50%">
 </div>
 
+> create by ideogram.ai
+
 Run the demo by :
 
 1. Create a `config.yaml` file in the format of `config.example.yaml`, and fill in the required config:
