@@ -1,0 +1,17 @@
+# APIs
+openai_api_key: "sk-"
+openai_api_base: "https://api.openai.com/v1/chat/completions" # or your own proxy
+google_api_key: "your_google_api_key"
+tavily_api_key: "tvly-"
+
+# Ollama Config
+run_local: "No" # must have ollama runnig in ur PC if Yes
+local_llm: "openhermes" # mistral, llama2 ...
+
+# Model Config
+models: "openai"
+
+# Document Config
+doc_url: 
+  - "https://nagi.fun/llm-5-transformer"  
+  - "https://nagi.fun/llm-4-wavenet"  
