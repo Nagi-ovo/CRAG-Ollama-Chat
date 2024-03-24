@@ -19,7 +19,7 @@ google_api_key: "your_google_api_key" # Unnecessary
 tavily_api_key: "tvly-" # Which you can create on https://app.tavily.com/
 
 # Ollama Config
-run_local: "Yes" # Yes or No
+run_local: "Yes" # Yes or No, must have ollama in ur PC
 local_llm: "openhermes" # mistral, llama2 ...
 
 # Model Config
