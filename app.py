@@ -402,9 +402,9 @@ app = workflow.compile()
 
 # Run
 
-st.title("Langgraph Demo")
+st.title("CRAG Ollama Chat")
 
-st.text("A possible query: Explain how the different types of agent memory work?")
+st.text("A possible query: How is the attention mechanism implemented in code in the article?")
 
 # User input
 user_question = st.text_input("Please enter your question:")
