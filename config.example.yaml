@@ -6,7 +6,7 @@ tavily_api_key: "tvly-"
 
 # Ollama Config
 run_local: "Yes" # Yes or No
-local_llm: "openhermes" # openhermes, llama2 ...
+local_llm: "openhermes" # mistral, llama2 ...
 
 # Model Config
 models: "openai"
