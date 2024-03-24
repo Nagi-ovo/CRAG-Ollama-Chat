@@ -1,5 +1,4 @@
 
-from dotenv import load_dotenv
 from langchain import hub
 from langchain.output_parsers import PydanticOutputParser
 from langchain_core.output_parsers import StrOutputParser
@@ -17,9 +16,13 @@ from langgraph.graph import END, StateGraph
 from typing import Dict, TypedDict
 from langchain.prompts import PromptTemplate
 import pprint
-import os
 import streamlit as st
 import yaml
+import nest_asyncio
+
+
+nest_asyncio.apply()
+
 # load config
 
 with open('config.yaml', 'r') as file:
@@ -35,6 +38,12 @@ local_llm = config["local_llm"]
 models = config["models"]
 
 doc_url = config["doc_url"]
+
+
+loader = WebBaseLoader(doc_url)
+loader.requests_per_second = 1
+docs = loader.aload()
+# print(len(docs))
 
 # Split
 text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
