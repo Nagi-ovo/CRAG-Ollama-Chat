@@ -1,0 +1,17 @@
+# APIs
+openai_api_key: "sk-MtKYyCyfPPyFcKmaA0B1E38cFb704e7bAa56Ba63120f7199"
+openai_api_base: "https://aihubmix.com/v1"
+google_api_key: "your_google_api_key"
+tavily_api_key: "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"
+
+# Ollama Config
+run_local: "No" # Yes or No
+local_llm: "mistral"
+
+# Model Config
+models: "openai"
+
+# Document Config
+doc_url: 
+  - "https://nagi.fun/llm-5-transformer"  
+  - "https://nagi.fun/llm-4-wavenet"  
