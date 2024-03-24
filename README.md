@@ -9,7 +9,7 @@ width="50%">
 
 Run the demo by :
 
-1. Modify the `config.yaml` file, fill in the required config:
+1. Creat a `config.yaml` file with the format of `config.example.yaml` and fill in the required config:
 
 ```yaml
 # APIs
