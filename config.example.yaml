@@ -5,8 +5,8 @@ google_api_key: "your_google_api_key"
 tavily_api_key: "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"
 
 # Ollama Config
-run_local: "No" # Yes or No
-local_llm: "mistral"
+run_local: "Yes" # Yes or No
+local_llm: "openhermes" # openhermes, llama2 ...
 
 # Model Config
 models: "openai"

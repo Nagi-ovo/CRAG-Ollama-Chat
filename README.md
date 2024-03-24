@@ -1,4 +1,4 @@
-# CRAG Demo
+# Nagi-Chat
 
 Run the demo by :
 

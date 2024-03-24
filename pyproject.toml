@@ -10,7 +10,6 @@ python = "^3.11"
 langchain = "^0.1.13"
 langchain-core = "^0.1.33"
 langgraph = "^0.0.30"
-python-dotenv = "^1.0.1"
 langchain-openai = "^0.1.1"
 
 
