@@ -19,30 +19,22 @@ from langchain.prompts import PromptTemplate
 import pprint
 import os
 import streamlit as st
+import yaml
+# load config
 
+with open('config.yaml', 'r') as file:
+    config = yaml.safe_load(file)
 
-# local 
+openai_api_key = config["openai_api_key"]
+openai_api_base = config["openai_api_base"]
+google_api_key = config["google_api_key"]
+tavily_api_key = config["tavily_api_key"]
 
-run_local = 'No'
-local_llm = 'mistral'
+run_local = config["run_local"]
+local_llm = config["local_llm"]
+models = config["models"]
 
-# online
-
-load_dotenv()
-
-models = "openai" # Google...
-
-openai_api_key = os.environ.get("OPENAI_API_KEY")
-openai_api_base= os.environ.get("OPENAI_API_BASE")
-google_api_key = "you api"
-tavily_api_key = os.environ.get("TAVILY_API_KEY")
-
-
-# Split documents
-url  = 'https://lilianweng.github.io/posts/2023-06-23-agent/'
-loader = WebBaseLoader(url)
-docs = loader.load()
-
+doc_url = config["doc_url"]
 
 # Split
 text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
