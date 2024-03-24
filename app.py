@@ -357,8 +357,8 @@ def decide_to_generate(state):
 
     print("---DECIDE TO GENERATE---")
     state_dict = state["keys"]
-    question = state_dict["question"]
-    filtered_documents = state_dict["documents"]
+    # question = state_dict["question"]
+    # filtered_documents = state_dict["documents"]
     search = state_dict["run_web_search"]
 
     if search == "Yes":
