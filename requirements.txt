@@ -7,4 +7,6 @@ langgraph==0.0.30
 python-dotenv==1.0.1
 streamlit==1.31.1
 beautifulsoup4==4.12.2 
-chromadb
+chromadb==0.4.24
+langchain-hub==0.1.15
+nest_asyncio==1.6.0
