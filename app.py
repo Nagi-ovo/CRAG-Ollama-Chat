@@ -175,18 +175,21 @@ def grade_documents(state):
     if run_local == "Yes":
         llm = ChatOllama(model=local_llm, 
                         temperature=0)
+
     elif models == "openai" :
         llm = ChatOpenAI(
             model="gpt-4-0125-preview", 
             temperature=0 , 
             openai_api_key=openai_api_key
         )
+
     else:
         llm = ChatGoogleGenerativeAI(model="gemini-pro",
                                     google_api_key=google_api_key,
                                     convert_system_message_to_human = True,
                                     verbose = True,
         )
+
     # Data model
     class grade(BaseModel):
         """Binary score for relevance check."""
@@ -300,6 +303,7 @@ def transform_query(state):
                                     convert_system_message_to_human = True,
                                     verbose = True,
         )
+
     # Prompt
     chain = prompt | llm | StrOutputParser()
     better_question = chain.invoke({"question": question})
@@ -402,7 +406,7 @@ st.title("Langgraph Demo")
 
 st.text("A possible query: Explain how the different types of agent memory work?")
 
-# 用户输入问题
+# User input
 user_question = st.text_input("Please enter your question:")
 # Explain how the different types of agent memory work?
 
@@ -414,16 +418,14 @@ if user_question:
         }
     }
 
-    # 对于每个节点的输出，创建一个st.expander UI组件
+    # For the output of each node, create an st.expander UI component
     for output in app.stream(inputs):
         for key, value in output.items():
-            # 创建一个可展开的UI块，标题是节点名称
+            # Create  expandable UI block with the node name
             with st.expander(f"Node '{key}':"):
-                # 在expander内部，显示该节点的详细信息
-                # 使用pprint格式化字典数据，使其易于阅读
+                # detailed information of nodes in expander
                 st.text(pprint.pformat(value["keys"], indent=2, width=80, depth=None))
 
-    # 当所有节点都处理完毕后，显示最终生成的内容
     final_generation = value['keys'].get('generation', 'No final generation produced.')
     st.subheader("Final Generation:")
     st.write(final_generation)
