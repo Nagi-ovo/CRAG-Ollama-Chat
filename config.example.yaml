@@ -1,8 +1,8 @@
 # APIs
-openai_api_key: "sk-MtKYyCyfPPyFcKmaA0B1E38cFb704e7bAa56Ba63120f7199"
-openai_api_base: "https://aihubmix.com/v1"
+openai_api_key: "sk-"
+openai_api_base: "https://api.openai.com/v1/chat/completions" # or your own proxy
 google_api_key: "your_google_api_key"
-tavily_api_key: "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"
+tavily_api_key: "tvly-"
 
 # Ollama Config
 run_local: "Yes" # Yes or No
