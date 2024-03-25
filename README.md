@@ -45,7 +45,9 @@ doc_url:
   - "https://nagi.fun/llm-4-wavenet"  
 ```
 
-2. run the command below:
+2. Install dependencies by poetry or `pip install -r requirements.txt`
+  
+3. run the command below:
 
 ```zsh
 streamlit run app.py
