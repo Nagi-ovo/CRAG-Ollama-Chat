@@ -25,11 +25,11 @@ Run the demo by :
 1. Creat a `config.yaml` file with the format of `config.example.yaml` and fill in the required config:
 
 ```yaml
-# APIs
+# APIs: If you aren't using ollama
 openai_api_key: "sk-"
 openai_api_base: "https://api.openai.com/v1/chat/completions" # Or your own proxy
 google_api_key: "your_google_api_key" # Unnecessary
-tavily_api_key: "tvly-" # Which you can create on https://app.tavily.com/
+tavily_api_key: "tvly-" # A must for the Websearch tools, which you can create on https://app.tavily.com/
 
 # Ollama Config
 run_local: "Yes" # Yes or No, if Yes, the you must have ollama running in ur PC
@@ -40,7 +40,7 @@ models: "openai" # If you want to achieve the best results
 
 # Document Config
 # Support multiple websites reading
-doc_url: 
+doc_url:  # My blogs right now
   - "https://nagi.fun/llm-5-transformer"  
   - "https://nagi.fun/llm-4-wavenet"  
 ```
