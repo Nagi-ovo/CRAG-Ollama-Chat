@@ -10,10 +10,14 @@ width="50%">
 ## Preview
 
 <div align="center">
-  <video src="https://github.com/Nagi-ovo/CRAG-Ollama-Chat/assets/101612750/d0f39bdb-00b3-4626-9087-b85f4930cc53" controls>
-    Your browser does not support the video tag.
+  <video src="https://github.com/Nagi-ovo/CRAG-Ollama-Chat/assets/101612750/feefb8f4-15aa-4f23-95e4-911804d6c53a" controls>
   </video>
 </div>
+
+
+
+
+
 
 
 Run the demo by :
