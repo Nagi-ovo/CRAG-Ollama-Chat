@@ -7,6 +7,15 @@ width="50%">
 
 > create by ideogram.ai
 
+## Preview
+
+<div align="center">
+  <video src="https://github.com/Nagi-ovo/CRAG-Ollama-Chat/assets/101612750/d0f39bdb-00b3-4626-9087-b85f4930cc53" controls>
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
 Run the demo by :
 
 1. Creat a `config.yaml` file with the format of `config.example.yaml` and fill in the required config:
