@@ -9,3 +9,4 @@ beautifulsoup4==4.12.2
 chromadb==0.4.24
 langchainhub==0.1.15
 nest_asyncio==1.6.0
+gpt4all==2.3.0
